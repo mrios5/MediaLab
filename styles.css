@@ -1,0 +1,51 @@
+html {
+    background-color: #e0e0e0;
+    display: flex;
+    justify-content: center;
+    font-family: monospace;
+    text-align: center;
+    align-items: center;
+}
+
+
+
+.capture {
+    border-radius: 20px;
+    background: #e0e0e0;
+    box-shadow:  18px 18px 36px #989898,
+             -18px -18px 36px #ffffff;
+    transform: scaleX(-1);
+}
+
+.skull {
+    position: absolute;
+    width: 60px;
+    height: auto;
+    top: 63px;
+}
+
+.caposkull {
+    position: absolute;
+    top: 30%;
+    right: 50px;
+}
+
+@keyframes scroll {
+    from {
+        transform: translate(0,0)
+    }
+
+    to {
+       transform: translate(600px,0)
+    }
+}
+
+.resultMarquee {
+    animation: scroll 7s linear 0s infinite;
+    position: absolute
+}
+
+
+.title {
+    margin-top: 30px;
+}
