@@ -161,22 +161,6 @@ const LaLista = (lista, student) => {
   }
 }
 
-const showlist = () =>{
-  console.log('esta es la lista')
-  var thelist  = lista
-  for(let i = 0; i < thelist.length; i++){
-    console.log(thelist[i])
-    document.getElementById("demo").innerHTML = thelist[i]
-    document.createElement("br")
-  }
-
-
-  lista.map((item) => {
-    
-  })
-
-
-}
 
 
 function loadTableData() {
@@ -186,7 +170,7 @@ function loadTableData() {
     let date = row.insertCell(0);
     date.innerHTML = item;
     let name = row.insertCell(1);
-    name.innerHTML = 'yes';
+    name.innerHTML = 'Yes';
   });
 }
 
